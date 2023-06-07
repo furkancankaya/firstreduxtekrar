@@ -1,8 +1,8 @@
 import * as actionTypes from "./actionTypes";
 
-export const increaseCounter = () => ({
+export const increaseCounter = (number) => ({
     type: actionTypes.INCREASE_COUNTER,
-    payload: 1,
+    payload: number,
 })
 
 export const increaseCounterWithTwo = () => ({
@@ -10,9 +10,9 @@ export const increaseCounterWithTwo = () => ({
     payload: 2,
 })
 
-export const decreaseCounter = () => ({
+export const decreaseCounter = (number) => ({
     type: actionTypes.DECREASE_COUNTER,
-    payload: 1,
+    payload: number,
 })
 
 export const multiplyCounter = (number) => ({

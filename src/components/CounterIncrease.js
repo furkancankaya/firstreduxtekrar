@@ -8,7 +8,7 @@ class CounterIncrease extends Component {
 
   handleSubmit = (event) =>{
     event.preventDefault();
-    const evnt =event.target.elements.number.value;
+    const evnt =Number(event.target.elements.number.value);
     console.log("eventt"+event)
     this.props.dispatch(increaseCounter(evnt));
 
